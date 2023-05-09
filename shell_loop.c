@@ -2,6 +2,7 @@
 
 /**
  * without_comment - deletes comments from the input
+ *
  * @in: input string
  * Return: input without comments
  */
@@ -19,6 +20,7 @@ char *without_comment(char *in)
 				free(in);
 				return (NULL);
 			}
+
 			if (in[i - 1] == ' ' || in[i - 1] == '\t' || in[i - 1] == ';')
 				up_to = i;
 		}
@@ -36,6 +38,7 @@ char *without_comment(char *in)
 /**
  * shell_loop - Loop of shell
  * @datash: data relevant (av, input, args)
+ *
  * Return: no return.
  */
 void shell_loop(data_shell *datash)

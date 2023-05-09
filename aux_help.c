@@ -19,6 +19,7 @@ void aux_help_env(void)
  */
 void aux_help_setenv(void)
 {
+
 	char *help = "setenv: setenv (const char *name, const char *value,";
 
 	write(STDOUT_FILENO, help, _strlen(help));
@@ -27,7 +28,6 @@ void aux_help_setenv(void)
 	help = "Add a new definition to the environment\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
-
 /**
  * aux_help_unsetenv - Help information for the builtin unsetenv
  * Return: no return
@@ -40,6 +40,7 @@ void aux_help_unsetenv(void)
 	help = "Remove an entry completely from the environment\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
+
 
 /**
  * aux_help_general - Entry point for help information for the help builtin

@@ -1,5 +1,5 @@
-#ifndef _MAIN_
-#define _MAIN_
+#ifndef _MAIN_H
+#define _MAIN_H
 
 #include <stdio.h>
 #include <unistd.h>
@@ -18,6 +18,7 @@
 
 /* Points to an array of pointers to strings called the "environment" */
 extern char **environ;
+
 
 /**
  * struct data - struct that contains all relevant data on runtime
@@ -206,6 +207,7 @@ char *error_env(data_shell *datash);
 char *error_syntax(char **args);
 char *error_permission(char **args);
 char *error_path_126(data_shell *datash);
+
 
 /* get_error.c */
 int get_error(data_shell *datash, int eval);

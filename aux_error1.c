@@ -2,6 +2,7 @@
 
 /**
  * strcat_cd - function that concatenates the message for cd error
+ *
  * @datash: data relevant (directory)
  * @msg: message to print
  * @error: output message
@@ -24,7 +25,7 @@ char *strcat_cd(data_shell *datash, char *msg, char *error, char *ver_str)
 		illegal_flag[0] = '-';
 		illegal_flag[1] = datash->args[1][1];
 		illegal_flag[2] = '\0';
-		strcat(error, illegal_flag);
+		_strcat(error, illegal_flag);
 		free(illegal_flag);
 	}
 	else
@@ -111,6 +112,7 @@ char *error_not_found(data_shell *datash)
 /**
  * error_exit_shell - generic error message for exit in get_exit
  * @datash: data relevant (counter, arguments)
+ *
  * Return: Error message
  */
 char *error_exit_shell(data_shell *datash)
